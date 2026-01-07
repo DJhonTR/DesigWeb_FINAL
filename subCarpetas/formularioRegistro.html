@@ -130,7 +130,7 @@
             </div>
           </div>
 
-          <a class="rounded-full bg-pink-500 p-2.5 px-3 text-sm font-medium text-white transition hover:bg-pink-600"
+          <a class="rounded-full bg-pink-600 p-2.5 px-3 text-sm font-medium text-white transition hover:bg-pink-600"
             href="../subCarpetas/formularioInicioSesion.html" data-translate="nav_login">Ingresar</a>
           <a class="hidden rounded-full p-2.5 px-3 border-2 border-pink-500 text-sm font-medium text-pink-500 transition hover:bg-pink-100 dark:hover:bg-gray-800 lg:block"
             href="../subCarpetas/formularioRegistro.html" data-translate="nav_register">Registro</a>
@@ -175,7 +175,7 @@
           </p>
 
           <div>
-            <label class="sr-only">Nombre Completo</label>
+            <label for="nombre" class="sr-only">Nombre Completo</label>
             <div class="relative flex items-center">
               <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
@@ -189,21 +189,21 @@
           </div>
 
           <div>
-            <label class="sr-only">Email</label>
+            <label for="email" class="sr-only">Email</label>
             <div class="relative flex items-center">
               <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
               </svg>
-              <input type="email" required name="email"
+              <input type="email" required name="email" 
                 class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white pl-12 p-3 text-sm shadow-sm dark:placeholder-gray-200 placeholder-gray-500"
                 placeholder="Correo electrónico" data-translate-placeholder="placeholder_email">
             </div>
           </div>
 
           <div>
-            <label class="sr-only">Teléfono</label>
+            <label for="telefono" class="sr-only">Teléfono</label>
             <div class="relative flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-4 size-5 text-gray-500 dark:text-gray-200"
                 viewBox="0 0 24 24">
@@ -217,7 +217,7 @@
           </div>
 
           <div>
-            <label class="sr-only">Dirección</label>
+            <label for="direccion" class="sr-only">Dirección</label>
             <div class="relative flex items-center">
               <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
@@ -231,7 +231,7 @@
           </div>
 
           <div>
-            <label class="sr-only">Distrito</label>
+            <label for="region" class="sr-only">Distrito</label>
 
             <select name="region" id="region" required
               class="w-full rounded-lg dark:bg-gray-700 dark:text-white p-4 text-sm shadow-sm ">
@@ -251,7 +251,7 @@
           </div>
 
           <div>
-            <label class="sr-only">Contraseña</label>
+            <label for="password" class="sr-only">Contraseña</label>
             <div class="relative flex items-center">
               <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
@@ -265,7 +265,7 @@
           </div>
 
           <div>
-            <label class="sr-only">Confirmar Contraseña</label>
+            <label for="password2" class="sr-only">Confirmar Contraseña</label>
             <div class="relative flex items-center">
               <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
@@ -280,7 +280,7 @@
             <p id="msgPass" class="text-sm mt-1 font-medium"></p>
           </div>
           <input type="submit" value="Crear cuenta" data-translate-value="btn_create_account"
-            class="mt-4 w-full bg-pink-500 rounded-lg px-5 p-3 hover:bg-pink-600 active:bg-pink-600 font-medium text-white cursor-pointer">
+            class="mt-4 w-full bg-pink-600 rounded-lg px-5 p-3 hover:bg-pink-600 active:bg-pink-600 font-medium text-white cursor-pointer">
 
         </form>
       </div>
