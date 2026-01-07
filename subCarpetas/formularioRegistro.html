@@ -166,7 +166,6 @@
           data-translate="form_register_title">
           Crear una cuenta
         </h1>
-
         <form id="formRegistro" class="mt-6 mb-0 space-y-6 rounded-lg p-6 shadow-xl bg-white dark:bg-gray-800">
 
           <p class="text-center text-lg font-medium text-gray-900 dark:text-white"
@@ -175,67 +174,66 @@
           </p>
 
           <div>
-            <label for="nombre" class="sr-only text-gray-900 dark:text-white">Nombre Completo</label>
+            <label for="nombre" class="sr-only text-gray-900 dark:text-white">Nombre completo</label>
             <div class="relative flex items-center">
-              <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
+              <svg aria-hidden="true" class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none"
+                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
-              <input type="text" required name="nombre"
+              <input id="nombre" name="nombre" type="text" required
                 class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white pl-12 p-3 text-sm shadow-sm dark:placeholder-gray-200 placeholder-gray-500"
-                placeholder="Nombre completo" data-translate-placeholder="placeholder_fullname">
+                placeholder="Nombre completo">
             </div>
           </div>
 
           <div>
-            <label for="email" class="sr-only text-gray-900 dark:text-white">Email</label>
+            <label for="email" class="sr-only text-gray-900 dark:text-white">Correo electrónico</label>
             <div class="relative flex items-center">
-              <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
+              <svg aria-hidden="true" class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none"
+                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9" />
               </svg>
-              <input type="email" required name="email"
+              <input id="email" name="email" type="email" required
                 class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white pl-12 p-3 text-sm shadow-sm dark:placeholder-gray-200 placeholder-gray-500"
-                placeholder="Correo electrónico" data-translate-placeholder="placeholder_email">
+                placeholder="Correo electrónico">
             </div>
           </div>
 
           <div>
             <label for="telefono" class="sr-only text-gray-900 dark:text-white">Teléfono</label>
             <div class="relative flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-4 size-5 text-gray-500 dark:text-gray-200"
+              <svg aria-hidden="true" class="absolute left-4 size-5 text-gray-500 dark:text-gray-200"
                 viewBox="0 0 24 24">
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384" />
+                <path fill="none" stroke="currentColor" stroke-width="2"
+                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3" />
               </svg>
-              <input type="tel" required name="telefono"
+              <input id="telefono" name="telefono" type="tel" required
                 class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white pl-12 p-3 text-sm shadow-sm dark:placeholder-gray-200 placeholder-gray-500"
-                placeholder="Número de teléfono" data-translate-placeholder="placeholder_phone_register">
+                placeholder="Número de teléfono">
             </div>
           </div>
 
           <div>
             <label for="direccion" class="sr-only text-gray-900 dark:text-white">Dirección</label>
             <div class="relative flex items-center">
-              <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
+              <svg aria-hidden="true" class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none"
+                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7z" />
               </svg>
-              <input type="text" required name="direccion"
+              <input id="direccion" name="direccion" type="text" required
                 class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white pl-12 p-3 text-sm shadow-sm dark:placeholder-gray-200 placeholder-gray-500"
-                placeholder="Dirección completa" data-translate-placeholder="placeholder_address_full">
+                placeholder="Dirección completa">
             </div>
           </div>
 
           <div>
             <label for="region" class="sr-only text-gray-900 dark:text-white">Distrito</label>
-
-            <select name="region" id="region" required
-              class="w-full rounded-lg dark:bg-gray-700 dark:text-white p-4 text-sm shadow-sm ">
-              <option value="" disabled selected data-translate="select_district">Seleccione Distrito</option>
+            <select id="region" name="region" required
+              class="w-full rounded-lg dark:bg-gray-700 dark:text-white p-4 text-sm shadow-sm">
+              <option value="" disabled selected>Seleccione Distrito</option>
               <option value="trujillo">Trujillo</option>
               <option value="el_porvenir">El Porvenir</option>
               <option value="florencia_de_mora">Florencia de Mora</option>
@@ -245,42 +243,41 @@
               <option value="moche">Moche</option>
               <option value="poroto">Poroto</option>
               <option value="salaverry">Salaverry</option>
-              <option value="simbal">Simbal</option>
-              <option value="victor_larco_herrera">Víctor Larco Herrera</optio>
+              <option value="victor_larco_herrera">Víctor Larco Herrera</option>
             </select>
           </div>
 
           <div>
             <label for="password" class="sr-only text-gray-900 dark:text-white">Contraseña</label>
             <div class="relative flex items-center">
-              <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
+              <svg aria-hidden="true" class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none"
+                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6" />
               </svg>
-              <input type="password" id="password" required
+              <input id="password" type="password" required
                 class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white pl-12 p-3 text-sm shadow-sm dark:placeholder-gray-200 placeholder-gray-500"
-                placeholder="Contraseña" data-translate-placeholder="placeholder_password">
+                placeholder="Contraseña">
             </div>
           </div>
 
           <div>
-            <label for="password2" class="sr-only">Confirmar Contraseña</label>
+            <label for="password2" class="sr-only text-gray-900 dark:text-white">Confirmar contraseña</label>
             <div class="relative flex items-center">
-              <svg class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
+              <svg aria-hidden="true" class="absolute left-4 size-5 text-gray-500 dark:text-gray-200" fill="none"
+                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6" />
               </svg>
-
-              <input type="password" id="password2" required
+              <input id="password2" type="password" required
                 class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white pl-12 p-3 text-sm shadow-sm dark:placeholder-gray-200 placeholder-gray-500"
-                placeholder="Confirmar contraseña" data-translate-placeholder="placeholder_confirm_password">
+                placeholder="Confirmar contraseña">
             </div>
             <p id="msgPass" class="text-sm mt-1 font-medium"></p>
           </div>
-          <input type="submit" value="Crear cuenta" data-translate-value="btn_create_account"
-            class="mt-4 w-full bg-pink-600 rounded-lg px-5 p-3 hover:bg-pink-600 active:bg-pink-600 font-medium text-white cursor-pointer">
+
+          <input type="submit" value="Crear cuenta"
+            class="mt-4 w-full bg-pink-500 rounded-lg px-5 p-3 hover:bg-pink-600 active:bg-pink-600 font-medium text-white cursor-pointer">
 
         </form>
       </div>
